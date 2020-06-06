@@ -15,15 +15,15 @@ public class MilitaryPlane extends Plane{
       }
 
       public int getMaxSpeed() {
-        return maxSpeed;
+          return maxSpeed;
        }
 
        public int getMaxLoadCapacity() {
-        return maxLoadCapacity;
+          return maxLoadCapacity;
        }
 
        public int getPassengersCapacity() {
-        return passengersCapacity;
+          return passengersCapacity;
        }
     }
 
