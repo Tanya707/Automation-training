@@ -1,3 +1,5 @@
+package JavaFundamentals;
+
 public class MainTaskFourthTask {
 
     public static void main(String[] args) {
