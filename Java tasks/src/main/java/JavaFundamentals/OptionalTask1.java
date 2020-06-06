@@ -1,13 +1,8 @@
-package JavaFundamentals.OptionalTask1;
+package JavaFundamentals;
 
 import java.util.Scanner;
 
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Scanner;
-    public class FirstPoint {
+    public class OptionalTask1 {
 
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
@@ -65,7 +60,8 @@ import java.util.Scanner;
             }
             average = (sum) / arr.length;
             for (int i = 0; i < arr.length; i++) {
-                if (arr[i].length() > average) System.out.println("Number is " + arr[i] + " his length " + arr[i].length());
+                if (arr[i].length() > average)
+                    System.out.println("Number is " + arr[i] + " his length " + arr[i].length());
             }
         }
     }
