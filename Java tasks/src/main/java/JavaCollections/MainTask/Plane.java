@@ -1,4 +1,4 @@
-package MainTask;
+package JavaCollections.MainTask;
 
 abstract public class Plane {
     String model;

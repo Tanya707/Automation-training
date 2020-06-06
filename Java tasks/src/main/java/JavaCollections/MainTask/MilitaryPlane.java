@@ -1,4 +1,4 @@
-package MainTask;
+package JavaCollections.MainTask;
 
 public class MilitaryPlane extends Plane{
 
