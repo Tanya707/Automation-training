@@ -18,11 +18,15 @@ import java.util.Scanner;
             for (int i = 0; i < N; i++) {
                 arr[i] = scan.next();
             }
-            solve(arr);
-            solve1(arr);
+            System.out.println("Min/max numbers length:");
+            MaxMinLengthOfNumbers(arr);
+            System.out.println("Sort numbers of length:");
+            SortNumbersOfLength(arr);
+            System.out.println("Longer average number length:");
+            LongerAverageNumberLength(arr);
         }
 
-        public static void solve(String[] arr) {
+        public static void MaxMinLengthOfNumbers(String[] arr) {
             int min = arr[0].length();
             int max = 0;
             for (String val : arr) {
@@ -37,8 +41,8 @@ import java.util.Scanner;
             }
         }
 
-        public static void solve1(String[] arr) {
-                for (int i = 0; i < arr.length; i++) {
+        public static void SortNumbersOfLength(String[] arr) {
+            for (int i = 0; i < arr.length; i++) {
                 for (int j = 0; j < arr.length - 1 - i; j++) {
                     if (arr[j].length() > arr[j + 1].length()) {
                         String str = arr[j];
@@ -50,6 +54,18 @@ import java.util.Scanner;
             for (int j = 0; j < arr.length; j++) {
                 System.out.println("Number is " + arr[j] + " his length " + arr[j].length());
 
+            }
+        }
+
+        public static void LongerAverageNumberLength(String[] arr) {
+            int sum = 0;
+            float average;
+            for (String val : arr) {
+                sum += val.length();
+            }
+            average = (sum) / arr.length;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i].length() > average) System.out.println("Number is " + arr[i] + " his length " + arr[i].length());
             }
         }
     }
