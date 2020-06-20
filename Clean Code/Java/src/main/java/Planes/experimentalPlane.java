@@ -5,8 +5,8 @@ import models.ExperimentalTypes;
 
 public class experimentalPlane extends Plane{
 
-    ExperimentalTypes type;
-    ClassificationLevel classificationLevel;
+    private ExperimentalTypes type;
+    private ClassificationLevel classificationLevel;
 
     public experimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes type, ClassificationLevel classificationLevel) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);

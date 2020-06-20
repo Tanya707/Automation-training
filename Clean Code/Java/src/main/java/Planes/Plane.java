@@ -4,9 +4,9 @@ import java.util.Objects;
 
 abstract public class Plane {
     String model;
-    int maxSpeed;
-    int maxFlightDistance;
-    int maxLoadCapacity;
+    private int maxSpeed;
+    private int maxFlightDistance;
+    private int maxLoadCapacity;
 
     public Plane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity) {
         this.model = model;
